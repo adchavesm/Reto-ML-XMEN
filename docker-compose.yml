@@ -14,11 +14,12 @@ services:
       - DB_USER
       - PRODUCTION
     depends_on:
-      - mysql
+      mysql:
+          condition: service_healthy
     links:
       - mysql
       - mysql:database
-    
+
   mysql:
     image: mysql:5.7.22
     env_file:
@@ -30,3 +31,7 @@ services:
       MYSQL_DATABASE: ${DB_NAME}
       MYSQL_USER: ${DB_USER}
       MYSQL_ROOT_PASSWORD: ${DB_PASS}
+    healthcheck:
+      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      timeout: 20s
+      retries: 10
