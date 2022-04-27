@@ -21,7 +21,6 @@ func init() {
 }
 func connectionDB() {
 	var err error
-	
 	db, err = gorm.Open(mysql.Open(getDBCredentials()), &gorm.Config{})
 	if err != nil {
 		panic(err.Error())
@@ -51,7 +50,6 @@ func InsertOrganism(dna []string, isMutant bool) {
 func DnaExist(dna []string) bool {
 	var organisms []model.Humans
 	db.Where(&model.Humans{Dna: castDnaToDBFormat(dna)}).Find(&organisms)
-	println(len(organisms))
 	return len(organisms) != 0
 }
 

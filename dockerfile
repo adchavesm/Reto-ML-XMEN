@@ -15,7 +15,6 @@ COPY . ./
 # RUN go build -o app ./cmd/bitsports/main.go
 RUN GOOS=linux go build -a -ldflags '-extldflags "-static"' -o app ./src/main.go
 
-
 FROM alpine:latest
 
 
