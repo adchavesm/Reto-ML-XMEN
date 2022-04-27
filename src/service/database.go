@@ -22,7 +22,6 @@ func init() {
 func connectionDB() {
 	var err error
 	
-	<-time.After(4 * time.Second)
 	db, err = gorm.Open(mysql.Open(getDBCredentials()), &gorm.Config{})
 	if err != nil {
 		panic(err.Error())
