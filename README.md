@@ -55,8 +55,10 @@ curl --location --request GET 'http://35.171.169.217:8080/stats'
 ### Evidencias de pruebas unitarias y covertura.
 
 ![Covertura desde la terminal.](images/Captura2.JPG)
-Covertura desde la terminal.
+  
+  Covertura desde la terminal.
 
 ![Covertura desde el directorio de archivos.](images/Captura.JPG)
-Covertura desde el directorio de el IDE.
+  
+  Covertura desde el directorio de el IDE.
 
