@@ -32,10 +32,22 @@ curl --location --request GET 'http://35.171.169.217:8080/stats'
 
 ## Instrucciones de ejecucion
 
-### Si quieres ejecutar esto en tu maquina local, debes seguir los siguientes pasos:
+#### Si quieres ejecutar esto en tu maquina local, debes seguir los siguientes pasos:
 
 - Tener instalado docker y docker compose en tu computadora.
 - Clonar este repositorio en un directorio de tu computadora.
 - Una vez clonado, entras al repositorio clonado en local y en tu terminal ejecutas: $ docker-compose up
 - Debido a que todo se encuentra dockerizado y la base de datos tambien es un contenedor, este comando le indicara a docker que corra los contenedores descritos en los archivos docker.
 - Solo tendras que esperar y ya tendras el servicio disponible en el puerto 8080.
+
+## Consideraciones
+
+- El algoritmo para identificar mutantes, funciona para cualquier matriz de tamaño N.
+- Se asumio que el conjunto de Mutantes pertenece a el conjunto de humanos. Por lo tanto todos los mutantes son humanos, pero no todos los humanos son mutantes.
+
+## Tecnologias utilizadas
+
+- Como lenguaje de programacion se utilizo GO y su framework Gin para gestionar el servidor.
+- Se utilizo una base de datos MySQL para la persistencia de informacion.
+- Se creo un contenedor de docker tanto para la app, como para la base de datos.
+- Se desplego en una maquina EC2 de AWS, a traves de docker-compose y el repositorio de github.
