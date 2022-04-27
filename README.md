@@ -5,7 +5,7 @@ Magneto necesita buscar Mutantes, esta herramienta desarrollada en GO y desplega
 
 ## Consulta si eres mutante!
 
-El ejercicio quedo resuelto y desplegado a traves de AWS. Por lo que si estas leyendo esto, puedes interactuar con este.
+El ejercicio quedo resuelto y desplegado a traves de AWS. Por lo que tu mismo, puedes interactuar con este.
 Este servicio se encuentra respondiendo en la direccion http://35.171.169.217, por el puerto: 8080.
 
 ### El servicio cuenta con dos recursos expuestos:
