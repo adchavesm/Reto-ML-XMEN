@@ -60,3 +60,6 @@ Covertura desde la terminal.
 ![Covertura desde el directorio de archivos.](images/Captura.JPG)  
 Covertura desde el directorio de el IDE.
 
+![Evidencia de ejecucion en maquina AWS.](images/Captura3.JPG)  
+Aplicacion corriendo en AWS.
+
